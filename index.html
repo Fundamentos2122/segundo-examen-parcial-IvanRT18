@@ -1,0 +1,48 @@
+<!-- Iván de Jesús Rodríguez Tovar -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="css/examen.css">
+</head>
+    <body style="background-color:rgb(233, 233, 233)">
+        <div  class="container-fluid container-sm  border border-success" style=" min-height: 130px; height:20vw">
+
+            <div class="modal" id="modal-test">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5><b>Agregar tarea</b></h5>
+                        <button data-dismiss="#modal-test">X</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Titulo</p><input type="text" name="titulo"> 
+                        <p>Descripción</p><input type="text" name="descripcion"> 
+                        <p>Fecha</p><input type="date" name="fecha" id=""> 
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-success">Save changes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 titulo">
+                    <h1>Lista de tareas</h1>
+                </div>
+            </div>
+            <div class="row lista-tareas">
+                <div>
+                    <input type="checkbox">Ver Todos
+                </div>
+                <!-- <button class="btn btn-primary">Nueva</button> -->
+                    <button class="btn btn-success" data-toggle="modal" 
+                    data-target="#modal-test">Nuevo</button>
+                
+            </div>
+        </div>
+        <script src="js/framework.js"></script>
+    </body>
+</html>
